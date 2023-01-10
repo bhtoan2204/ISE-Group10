@@ -1,0 +1,16 @@
+  <h1>Give us feedback</h1>
+  <h2>Order id: {{id}}</h2>
+<form id="contact_form" name="contact_form" method="post" action="/customer/feedback">
+    <input type="text" value="{{id}}" hidden name="id">
+    <div class="mb-5">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+    </div>
+    <button onclick="abc()" type="submit" class="btn btn-primary px-4 btn-lg">Send</button>
+</form>
+
+<script>
+function abc() {
+  alert("Send feedback successfully!");
+}
+</script>
